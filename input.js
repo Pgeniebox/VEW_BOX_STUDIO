@@ -1,6 +1,6 @@
 
 var mc = document.body.querySelectorAll('.card');
-
+var go= document.querySelector('#go');
 
 let id = 0;
 
@@ -32,9 +32,17 @@ document.addEventListener("keydown", function(event) {
 function handleArrowPress(direction) {
   
     if (direction === 'up') {
+      mc[id].style.border = "0px ";
+      id = 5;
+      go.style.backgroundColor="white";
+      go.style.color="black";
     } else if (direction === 'down'){
+      go.style.backgroundColor="rgba(255, 255, 255, 0.062)";
+      go.style.color="white";
+      id=0;
+      mc[id].style.border = "2px solid white";
     }
-  
+  if(id!=5){
     if (direction === 'right' && id!==3) {
       
         mc[id].style.border = "0px ";
@@ -50,5 +58,5 @@ function handleArrowPress(direction) {
         id = Math.max(id - 1, 0);
         mc[id].style.border = "2px solid white";
      
-      }
+      }}
       }

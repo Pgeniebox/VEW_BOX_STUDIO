@@ -6,7 +6,7 @@
       let yCount = 15;
       let iXCount = 1/ (xCount - 1);
       let iYCount = 1 / (yCount - 1);
-      let time = e * 0.00004;
+      let time = e * 0.0004;
       let timeStep = 0.0001;
       let grad = ctx.createLinearGradient(-width, 0, width, height);
       let t = time % 1;

@@ -9,7 +9,7 @@ document.addEventListener("keydown", function(event) {
  
     switch (event.key) {
         case "Enter":
-            Android.showToast(String(id));
+            AndroidInterface.receiveStringFromJS(String(id));
         break;
       case "ArrowUp":
         handleArrowPress('up');

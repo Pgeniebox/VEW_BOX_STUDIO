@@ -37,9 +37,9 @@
         time += timeStep;
       }
       compositeOperation(compOper.lighter);
-      ctx.filter = 'blur(0px)';
-      stroke(1.5, 0);
-      ctx.filter = 'blur(10px)';
+      //ctx.filter = 'blur(0px)';
+      stroke(0.5, 0);
+      //ctx.filter = 'blur(10px)';
       stroke(hsl(0, 0, 100, 0.1), 1);
     }
     

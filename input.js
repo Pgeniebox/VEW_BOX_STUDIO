@@ -3,7 +3,7 @@ var mc = document.body.querySelectorAll('.card');
 var go= document.querySelector('#go');
 
 let id = 0;
-
+var boot = false;
 
 document.addEventListener("keydown", function(event) {
  
@@ -30,7 +30,7 @@ document.addEventListener("keydown", function(event) {
 );
 
 function handleArrowPress(direction) {
-  
+  if(boot){ 
     if (direction === 'up') {
       mc[id].style.border = "0px ";
       id = 5;
@@ -58,5 +58,5 @@ function handleArrowPress(direction) {
         id = Math.max(id - 1, 0);
         mc[id].style.border = "2px solid white";
      
-      }}
+      }}}
       }
